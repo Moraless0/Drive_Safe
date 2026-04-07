@@ -1,0 +1,3 @@
+from funcionalidades_menu import seleccionar_opción
+
+seleccionar_opción()
