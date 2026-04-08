@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "Henry",
+        "documento": 3841697400115,
+        "vehiculo": "Moto"
+    },
+    {
+        "nombre": "Luis",
+        "documento": 8920391293,
+        "vehiculo": "Carro"
+    },
+    {
+        "nombre": "Lesli",
+        "documento": 129302031,
+        "vehiculo": "Carro"
+    }
+]

@@ -1,2 +1,16 @@
 ERROR: Opción inválida = 1
 
+ERROR: Opción inválida = 12
+
+ERROR: Opción inválida = 12
+
+ERROR: Opción inválida = 12
+
+ERROR: Opción inválida = 12
+
+No existen contactos
+
+ERROR: Opción inválida = 22222222222
+
+ERROR: Opción inválida = 22
+
