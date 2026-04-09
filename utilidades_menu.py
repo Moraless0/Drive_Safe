@@ -34,7 +34,8 @@ def pedir_opcion_clientes():
                 ║  [1] Registrar cliente               ║
                 ║  [2] Listar clientes                 ║
                 ║  [3] Buscar cliente                  ║
-                ║  [4] Menu principal                  ║
+                ║  [4] Eliminar cliente                ║
+                ║  [5] Menu principal                  ║
                 ╠══════════════════════════════════════╣""")
 
     opc = int(input("                ║  Opción: "))
@@ -49,7 +50,8 @@ def pedir_opcion_instructores():
                 ╠══════════════════════════════════════╣
                 ║  [1] Registrar instructor            ║
                 ║  [2] Listar instructores             ║
-                ║  [3] Menu principal                  ║
+                ║  [3] Eliminar instructores           ║
+                ║  [4] Menu principal                  ║
                 ╠══════════════════════════════════════╣""")
 
     opc = int(input("                ║  Opción: "))

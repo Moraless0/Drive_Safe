@@ -5,13 +5,18 @@
         "vehiculo": "Moto"
     },
     {
-        "nombre": "Luis",
-        "documento": 8920391293,
+        "nombre": "Pedro",
+        "documento": 9230239940,
         "vehiculo": "Carro"
     },
     {
-        "nombre": "Lesli",
-        "documento": 129302031,
+        "nombre": "Juan",
+        "documento": 19293894,
+        "vehiculo": "Moto"
+    },
+    {
+        "nombre": "Ronaldo",
+        "documento": 9348923,
         "vehiculo": "Carro"
     }
 ]

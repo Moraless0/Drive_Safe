@@ -1,5 +1,7 @@
 from utilidades_menu import mostrar_logo, pedir_opcion, pedir_opcion_clientes, pedir_opcion_instructores, pedir_opcion_vehiculos, pedir_opcion_citas, pedir_opcion_reporte
-from funcionalidades_clientes import registrar_cliente, listar_clientes, buscar_cliente
+from funcionalidades_clientes import registrar_cliente, listar_clientes, buscar_cliente, eliminar_cliente
+from funcionalidades_instructores import registrar_instructor, listar_instructores, eliminar_instructor
+from funcionalidades_vehiculos import registrar_vehiculo, listar_vehiculos, cambiar_estado_vehiculo
 from utilidades import pedir_texto
 import os
 
@@ -59,6 +61,9 @@ def menu_gestionar_clientes():
                 buscar_cliente()
             elif n == 4:
                 os.system("clear")
+                eliminar_cliente()
+            elif n == 5:
+                os.system("clear")
                 print("Saliendo del programa...")
                 break
             else:
@@ -82,11 +87,14 @@ def menu_gestionar_instructores():
             n = pedir_opcion_instructores()
             if n == 1:
                 os.system("clear")
-                print("Opción #1")
+                registrar_instructor()
             elif n == 2:
                 os.system("clear")
-                print("Opción #2 - Eliminar contacto")
+                listar_instructores()
             elif n == 3:
+                os.system("clear")
+                eliminar_instructor()
+            elif n == 4:
                 os.system("clear")
                 print("Saliendo del programa...")
                 break
@@ -110,13 +118,13 @@ def menu_gestionar_vehiculos():
             n = pedir_opcion_vehiculos()
             if n == 1:
                 os.system("clear")
-                print("Opción #1 - Agregar contacto nuevo")
+                registrar_vehiculo()
             elif n == 2:
                 os.system("clear")
-                print("Opción #2 - Eliminar contacto")
+                listar_vehiculos()
             elif n == 3:
                 os.system("clear")
-                print("Opción #3 - Buscar contacto")
+                cambiar_estado_vehiculo()
             elif n == 4:
                 os.system("clear")
                 print("Saliendo del programa...")

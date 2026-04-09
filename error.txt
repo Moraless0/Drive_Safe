@@ -14,3 +14,11 @@ ERROR: Opción inválida = 22222222222
 
 ERROR: Opción inválida = 22
 
+ERROR: Opción inválida = 23
+
+ERROR: Opción inválida = 13
+
+Usuario intenta eliminar cliente no existente
+
+ERROR: Opción inválida = 5
+

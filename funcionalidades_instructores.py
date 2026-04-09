@@ -3,43 +3,65 @@ import json, os
 
 def registrar_instructor():
     nombre = input("Ingrese el nombre del instructor ").capitalize()
-    nombre = input("Ingrese el apellido del instructor ").capitalize()
+    apellido = input("Ingrese el apellido del instructor ").capitalize()
     documento = int(input("Ingrese el documento del instructor "))
-    especialidad = input("Ingrese el tipo de vehiculo a instruir ").capitalize()
-
-    instructores = {
-        "nombre" : nombre, "documento" : documento, "vehiculo" : tipo_de_vehiculo
-        }
+    
+    while True:
+        tipo = input("Ingrese tipo de vehículo (moto/carro): ").strip().capitalize()
+        if tipo in ["Moto", "Carro"]:
+            break
+        else:
+            print("❌ Solo se permite 'Moto' o 'Carro'")
 
     try:
-        with open("clientes.json", "r") as archivo:
+        with open("instructores.json", "r") as archivo:
             datos = json.load(archivo)
-    
     except:
         datos = []
-        
+
+    for i in datos:
+        if i["documento"] == documento:
+            print("❌ Ya existe un instructor con ese documento")
+            pedir_texto("ENTER para continuar...")
+            return
+
+    ids = [i["id"] for i in datos if "id" in i]
+    nuevo_id = max(ids) + 1 if ids else 1
+
+    instructores = {
+        "id": nuevo_id,
+        "nombre" : nombre,
+        "apellido" : apellido,
+        "documento" : documento,
+        "especialidad" : tipo
+    }
+
     datos.append(instructores)
 
-    with open("clientes.json", "w") as archivo:
+    with open("instructores.json", "w") as archivo:
         json.dump(datos, archivo, indent=4)
+    
+    print("✅ Instructor registrado correctamente")
+    pedir_texto("ENTER para continuar...")
 
-def listar_clientes():
+def listar_instructores():
     os.system("clear")
     try:
-        with open("clientes.json", "r") as archivo:
-            clientes = json.load(archivo)
+        with open("instructores.json", "r") as archivo:
+            instructores = json.load(archivo)
 
-        if not clientes:
-            print("No hay clientes registrados.")
+        if not instructores:
+            print("No hay instructores registrados.")
         else:
-            for cliente in clientes:
-                print("Nombre:", cliente.get("nombre", ""), cliente.get("apellido", ""))
-                print("Documento:", cliente.get("documento", ""))
-                print("Tipo de vehículo:", cliente.get("tipo_vehiculo", ""))
+            for instructor in instructores:
+                print("ID:", instructor.get("id", ""))
+                print("Nombre:", instructor.get("nombre", ""), instructor.get("apellido", ""))
+                print("Documento:", instructor.get("documento", ""))
+                print("Tipo de vehículo:", instructor.get("especialidad", ""))
                 print("==" * 18)
 
     except FileNotFoundError:
-        print("El archivo clientes.json no existe.")
+        print("El archivo instructores.json no existe.")
 
     except json.JSONDecodeError:
         print("El archivo está vacío o dañado.")
@@ -49,38 +71,24 @@ def listar_clientes():
 
     pedir_texto("Pulse ENTER para continuar...")
 
-def buscar_cliente():
-    nombre_buscar = input("Ingrese el nombre del cliente: ").strip().lower()
+def eliminar_instructor():
+    nombre = input("Ingrese el nombre del instructor a eliminar: ").capitalize()
 
-    try:
-        with open("clientes.json", "r") as archivo:
-            clientes = json.load(archivo)
+    with open("instructores.json", "r") as archivo:
+        instructor = json.load(archivo)
         
-        encontrado = False
-
-        for cliente in clientes:
-            if cliente.get("nombre", "").lower() == nombre_buscar:
-
-                print(f"""
-Nombre: {cliente.get('nombre', '')} {cliente.get('apellido', '')}
-Documento: {cliente.get('documento', '')}
-Tipo de vehículo: {cliente.get('vehiculo', '')}
-{"=="*15}
-""")
-                encontrado = True
-
-        if not encontrado:
-            print("No se encontró el cliente")
+        nueva_lista = [c for c in instructor if c["nombre"]!= nombre]
+        
+        if len (instructor) == len(nueva_lista):
+            print("No se encontró el instructor")
             with open("error.txt", "a") as archivo:
-                archivo.write("Usuario intentó buscar cliente inexistente\n")
+                archivo.write("Usuario intenta eliminar instructor no existente\n\n")
+                pedir_texto("Pulse ENTER para continuar...", permitir_vacio=True)
+        else:
+            print("Instructor eliminado correctamente")
+            pedir_texto("Pulse ENTER para continuar...", permitir_vacio=True)
+                
+        with open("instructores.json", "w") as archivo:
+            json.dump(nueva_lista, archivo, indent=4)
 
-    except FileNotFoundError:
-        print("El archivo clientes.json no existe")
-
-    except json.JSONDecodeError:
-        print("El archivo está vacío o dañado")
-
-    except Exception as e:
-        print("Error:", e)
-
-    pedir_texto("Pulse ENTER para continuar...")
+    
