@@ -3,7 +3,8 @@ import json, os
 
 def registrar_cliente():
     nombre = input("Ingrese el nombre del cliente ").capitalize()
-    documento = int(input("Ingrese el documento del cliente "))
+    apellido = input("Ingrese el apellido del cliente").capitalize()
+    documento = input("Ingrese el documento del cliente ")
     
     while True:
         tipo = input("Ingrese tipo de vehículo (moto/carro): ").strip().capitalize()
@@ -13,11 +14,11 @@ def registrar_cliente():
             print("❌ Solo se permite 'Moto' o 'Carro'")
 
     clientes = {
-        "nombre" : nombre, "documento" : documento, "vehiculo" : tipo
+        "documento" : documento,"nombre" : nombre, "apellido" : apellido,  "vehiculo" : tipo
         }
 
     try:
-        with open("clientes.json", "r") as archivo:
+        with open("data/clientes.json", "r") as archivo:
             datos = json.load(archivo)
     
     except:
@@ -25,7 +26,7 @@ def registrar_cliente():
         
     datos.append(clientes)
 
-    with open("clientes.json", "w") as archivo:
+    with open("data/clientes.json", "w") as archivo:
         json.dump(datos, archivo, indent=4)
     
     print("✅ Cliente registrado correctamente")
@@ -34,7 +35,7 @@ def registrar_cliente():
 def listar_clientes():
     os.system("clear")
     try:
-        with open("clientes.json", "r") as archivo:
+        with open("data/clientes.json", "r") as archivo:
             clientes = json.load(archivo)
 
         if not clientes:
@@ -61,7 +62,7 @@ def buscar_cliente():
     nombre_buscar = input("Ingrese el nombre del cliente: ").strip().lower()
 
     try:
-        with open("clientes.json", "r") as archivo:
+        with open("data/clientes.json", "r") as archivo:
             clientes = json.load(archivo)
         
         encontrado = False
@@ -79,7 +80,7 @@ Tipo de vehículo: {cliente.get('vehiculo', '')}
 
         if not encontrado:
             print("No se encontró el cliente")
-            with open("error.txt", "a") as archivo:
+            with open("data/error.txt", "a") as archivo:
                 archivo.write("Usuario intentó buscar cliente inexistente\n")
 
     except FileNotFoundError:
@@ -96,19 +97,19 @@ Tipo de vehículo: {cliente.get('vehiculo', '')}
 def eliminar_cliente():
     nombre = input("Ingrese el nombre del cliente a eliminar: ").capitalize()
 
-    with open("clientes.json", "r") as archivo:
+    with open("data/clientes.json", "r") as archivo:
         cliente = json.load(archivo)
         
         nueva_lista = [c for c in cliente if c["nombre"]!= nombre]
         
         if len (cliente) == len(nueva_lista):
             print("No se encontró el cliente")
-            with open("error.txt", "a") as archivo:
+            with open("data/error.txt", "a") as archivo:
                 archivo.write("Usuario intenta eliminar cliente no existente\n\n")
                 pedir_texto("Pulse ENTER para continuar...", permitir_vacio=True)
         else:
             print("Cliente eliminado correctamente")
             pedir_texto("Pulse ENTER para continuar...", permitir_vacio=True)
                 
-        with open("clientes.json", "w") as archivo:
+        with open("data/clientes.json", "w") as archivo:
             json.dump(nueva_lista, archivo, indent=4)

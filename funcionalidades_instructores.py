@@ -4,7 +4,7 @@ import json, os
 def registrar_instructor():
     nombre = input("Ingrese el nombre del instructor ").capitalize()
     apellido = input("Ingrese el apellido del instructor ").capitalize()
-    documento = int(input("Ingrese el documento del instructor "))
+    documento = input("Ingrese el documento del instructor ")
     
     while True:
         tipo = input("Ingrese tipo de vehículo (moto/carro): ").strip().capitalize()
@@ -14,7 +14,7 @@ def registrar_instructor():
             print("❌ Solo se permite 'Moto' o 'Carro'")
 
     try:
-        with open("instructores.json", "r") as archivo:
+        with open("data/instructores.json", "r") as archivo:
             datos = json.load(archivo)
     except:
         datos = []
@@ -38,7 +38,7 @@ def registrar_instructor():
 
     datos.append(instructores)
 
-    with open("instructores.json", "w") as archivo:
+    with open("data/instructores.json", "w") as archivo:
         json.dump(datos, archivo, indent=4)
     
     print("✅ Instructor registrado correctamente")
@@ -47,7 +47,7 @@ def registrar_instructor():
 def listar_instructores():
     os.system("clear")
     try:
-        with open("instructores.json", "r") as archivo:
+        with open("data/instructores.json", "r") as archivo:
             instructores = json.load(archivo)
 
         if not instructores:
@@ -74,21 +74,21 @@ def listar_instructores():
 def eliminar_instructor():
     nombre = input("Ingrese el nombre del instructor a eliminar: ").capitalize()
 
-    with open("instructores.json", "r") as archivo:
+    with open("data/instructores.json", "r") as archivo:
         instructor = json.load(archivo)
         
         nueva_lista = [c for c in instructor if c["nombre"]!= nombre]
         
         if len (instructor) == len(nueva_lista):
             print("No se encontró el instructor")
-            with open("error.txt", "a") as archivo:
+            with open("data/error.txt", "a") as archivo:
                 archivo.write("Usuario intenta eliminar instructor no existente\n\n")
                 pedir_texto("Pulse ENTER para continuar...", permitir_vacio=True)
         else:
             print("Instructor eliminado correctamente")
             pedir_texto("Pulse ENTER para continuar...", permitir_vacio=True)
                 
-        with open("instructores.json", "w") as archivo:
+        with open("data/instructores.json", "w") as archivo:
             json.dump(nueva_lista, archivo, indent=4)
 
     

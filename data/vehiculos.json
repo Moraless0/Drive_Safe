@@ -1,0 +1,50 @@
+[
+    {
+        "placa": "M996FTW",
+        "tipo": "Moto",
+        "marca": "Mrt",
+        "modelo": "250 vintage",
+        "anio": "2018",
+        "disponible": false
+    },
+    {
+        "placa": "M675FQX",
+        "tipo": "Moto",
+        "marca": "Tvs",
+        "modelo": "Apache",
+        "anio": "2013",
+        "disponible": false
+    },
+    {
+        "placa": "M999FTW",
+        "tipo": "Moto",
+        "marca": "Mrt",
+        "modelo": "250 vintage",
+        "anio": "2018",
+        "disponible": true
+    },
+    {
+        "placa": "P984JGS",
+        "tipo": "Carro",
+        "marca": "Honda",
+        "modelo": "Civic",
+        "anio": "2004",
+        "disponible": false
+    },
+    {
+        "placa": "",
+        "tipo": "Moto",
+        "marca": "",
+        "modelo": "",
+        "anio": "",
+        "disponible": true
+    },
+    {
+        "placa": "M325LWS",
+        "tipo": "Moto",
+        "marca": "Kawasaki",
+        "modelo": "Ninja 400",
+        "anio": "2026",
+        "disponible": true
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "cliente": "2011",
+        "instructor": "3841",
+        "vehiculo": "M675FQX",
+        "fecha": "2026 04 11",
+        "hora": "13 30",
+        "duracion": "60",
+        "asistencia": false,
+        "observaciones": ""
+    }
+]

@@ -2,6 +2,7 @@ from utilidades_menu import mostrar_logo, pedir_opcion, pedir_opcion_clientes, p
 from funcionalidades_clientes import registrar_cliente, listar_clientes, buscar_cliente, eliminar_cliente
 from funcionalidades_instructores import registrar_instructor, listar_instructores, eliminar_instructor
 from funcionalidades_vehiculos import registrar_vehiculo, listar_vehiculos, cambiar_estado_vehiculo
+from funcionalidades_citas import programar_cita, listar_citas
 from utilidades import pedir_texto
 import os
 
@@ -36,7 +37,7 @@ def seleccionar_opción():
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
 
-                with open("error.txt", "a") as archivo:
+                with open("data/error.txt", "a") as archivo:
                  archivo.write(f"ERROR: Opción inválida = {n}\n\n")
 
                     
@@ -72,7 +73,7 @@ def menu_gestionar_clientes():
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
 
-                with open("error.txt", "a") as archivo:
+                with open("data/error.txt", "a") as archivo:
                     archivo.write(f"ERROR: Opción inválida = {n}\n\n")
         
         except Exception:
@@ -104,7 +105,7 @@ def menu_gestionar_instructores():
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
 
-                with open("error.txt", "a") as archivo:
+                with open("data/error.txt", "a") as archivo:
                     archivo.write(f"ERROR: Opción inválida = {n}\n\n")
         
         except Exception:
@@ -135,7 +136,7 @@ def menu_gestionar_vehiculos():
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
 
-                with open("error.txt", "a") as archivo:
+                with open("data/error.txt", "a") as archivo:
                  archivo.write(f"ERROR: Opción inválida = {n}\n\n")
         
         except Exception:
@@ -149,10 +150,10 @@ def menu_gestionar_citas():
             n = pedir_opcion_citas()
             if n == 1:
                 os.system("clear")
-                print("Opción #1 - Agregar contacto nuevo")
+                programar_cita()
             elif n == 2:
                 os.system("clear")
-                print("Opción #2 - Eliminar contacto")
+                listar_citas()
             elif n == 3:
                 os.system("clear")
                 print("Opción #3 - Buscar contacto")
@@ -171,7 +172,7 @@ def menu_gestionar_citas():
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
 
-                with open("error.txt", "a") as archivo:
+                with open("data/error.txt", "a") as archivo:
                  archivo.write(f"ERROR: Opción inválida = {n}\n\n")
 
                     
@@ -198,7 +199,7 @@ def menu_gestionar_reporte():
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
 
-                with open("error.txt", "a") as archivo:
+                with open("data/error.txt", "a") as archivo:
                  archivo.write(f"ERROR: Opción inválida = {n}\n\n")
         
         except Exception:

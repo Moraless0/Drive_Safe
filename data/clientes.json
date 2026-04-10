@@ -1,0 +1,26 @@
+[
+    {
+        "documento": "3841697400115",
+        "nombre": "Henry",
+        "apellido": "Morales",
+        "tipo": "Moto"
+    },
+    {
+        "documento": "9230239940",
+        "nombre": "Pedro",
+        "apellido": "Lopez",
+        "tipo": "Carro"
+    },
+    {
+        "documento": "19293894",
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "tipo": "Moto"
+    },
+    {
+        "documento": "2011",
+        "nombre": "Lesli",
+        "apellido": "Wang",
+        "vehiculo": "Moto"
+    }
+]

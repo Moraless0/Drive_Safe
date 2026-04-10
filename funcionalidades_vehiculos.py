@@ -29,7 +29,7 @@ def registrar_vehiculo():
     }
 
     try:
-        with open("vehiculos.json", "r") as archivo:
+        with open("data/vehiculos.json", "r") as archivo:
             datos = json.load(archivo)
     except:
         datos = []
@@ -42,7 +42,7 @@ def registrar_vehiculo():
 
     datos.append(vehiculo)
 
-    with open("vehiculos.json", "w") as archivo:
+    with open("data/vehiculos.json", "w") as archivo:
         json.dump(datos, archivo, indent=4)
 
     print("✅ Vehículo registrado correctamente")
@@ -51,7 +51,7 @@ def registrar_vehiculo():
 def listar_vehiculos():
     os.system("clear")
     try:
-        with open("vehiculos.json", "r") as archivo:
+        with open("data/vehiculos.json", "r") as archivo:
             vehiculos = json.load(archivo)
 
         if not vehiculos:
@@ -86,7 +86,7 @@ def cambiar_estado_vehiculo():
     placa = input("Ingrese la placa del vehículo: ").strip().upper()
 
     try:
-        with open("vehiculos.json", "r") as archivo:
+        with open("data/vehiculos.json", "r") as archivo:
             vehiculos = json.load(archivo)
     except:
         print("❌ Error al leer el archivo")
@@ -108,7 +108,7 @@ def cambiar_estado_vehiculo():
     if not encontrado:
         print("❌ Vehículo no encontrado")
 
-    with open("vehiculos.json", "w") as archivo:
+    with open("data/vehiculos.json", "w") as archivo:
         json.dump(vehiculos, archivo, indent=4)
 
     pedir_texto("ENTER para continuar...")
