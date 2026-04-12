@@ -3,7 +3,7 @@ import json, os
 
 def registrar_cliente():
     nombre = input("Ingrese el nombre del cliente ").capitalize()
-    apellido = input("Ingrese el apellido del cliente").capitalize()
+    apellido = input("Ingrese el apellido del cliente ").capitalize()
     documento = input("Ingrese el documento del cliente ")
     
     while True:
@@ -30,7 +30,7 @@ def registrar_cliente():
         json.dump(datos, archivo, indent=4)
     
     print("✅ Cliente registrado correctamente")
-    pedir_texto("ENTER para continuar...")
+    pedir_texto("ENTER para continuar", permitir_vacio=True)
 
 def listar_clientes():
     os.system("clear")
@@ -56,7 +56,7 @@ def listar_clientes():
     except Exception as e:
         print("Error inesperado:", e)
 
-    pedir_texto("Pulse ENTER para continuar...")
+    pedir_texto("ENTER para continuar", permitir_vacio=True)
 
 def buscar_cliente():
     nombre_buscar = input("Ingrese el nombre del cliente: ").strip().lower()
@@ -92,7 +92,7 @@ Tipo de vehículo: {cliente.get('vehiculo', '')}
     except Exception as e:
         print("Error:", e)
 
-    pedir_texto("Pulse ENTER para continuar...")
+    pedir_texto("ENTER para continuar", permitir_vacio=True)
 
 def eliminar_cliente():
     nombre = input("Ingrese el nombre del cliente a eliminar: ").capitalize()

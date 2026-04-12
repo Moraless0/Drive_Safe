@@ -2,7 +2,8 @@ from utilidades_menu import mostrar_logo, pedir_opcion, pedir_opcion_clientes, p
 from funcionalidades_clientes import registrar_cliente, listar_clientes, buscar_cliente, eliminar_cliente
 from funcionalidades_instructores import registrar_instructor, listar_instructores, eliminar_instructor
 from funcionalidades_vehiculos import registrar_vehiculo, listar_vehiculos, cambiar_estado_vehiculo
-from funcionalidades_citas import programar_cita, listar_citas
+from funcionalidades_citas import programar_cita, listar_citas, listar_citas_cliente, listar_citas_fecha, registrar_asistencia
+from funcionalidades_reporte import menu_historial
 from utilidades import pedir_texto
 import os
 
@@ -156,12 +157,12 @@ def menu_gestionar_citas():
                 listar_citas()
             elif n == 3:
                 os.system("clear")
-                print("Opción #3 - Buscar contacto")
+                listar_citas_cliente()
             elif n == 4:
                 os.system("clear")
-                print("Opción #4 - Mostrar todos los contactos")
+                listar_citas_fecha()
             elif n == 5:
-                print("Opcion #5")
+                registrar_asistencia()
             elif n == 6:
                 os.system("clear")
                 print("Saliendo del programa...")
@@ -188,7 +189,7 @@ def menu_gestionar_reporte():
             n = pedir_opcion_reporte()
             if n == 1:
                 os.system("clear")
-                print("Opción #1 - Agregar contacto nuevo")
+                menu_historial()
             elif n == 2:
                 os.system("clear")
                 print("Saliendo del programa...")

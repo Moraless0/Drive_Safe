@@ -98,7 +98,7 @@ def pedir_opcion_reporte():
                 ╔══════════════════════════════════════╗
                 ║           GESTIONAR CITAS            ║
                 ╠══════════════════════════════════════╣
-                ║  [1] Historial por cliente           ║
+                ║  [1] Historial                       ║
                 ║  [2] Menu principal                  ║
                 ╠══════════════════════════════════════╣""")
 

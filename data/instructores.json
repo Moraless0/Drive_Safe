@@ -1,9 +1,142 @@
 [
     {
         "id": 1,
-        "nombre": "Henry",
-        "apellido": "Morales",
-        "documento": "3841",
+        "nombre": "Juan",
+        "apellido": "Molina",
+        "documento": "9080",
         "especialidad": "Moto"
+    },
+    {
+        "id": 2,
+        "nombre": "Mishell",
+        "apellido": "Gonzales",
+        "documento": "6070",
+        "especialidad": "Carro"
+    },
+    {
+        "id": 3,
+        "nombre": "Carlos",
+        "apellido": "Ramirez",
+        "documento": "1111",
+        "especialidad": "Moto"
+    },
+    {
+        "id": 4,
+        "nombre": "Laura",
+        "apellido": "Torres",
+        "documento": "2222",
+        "especialidad": "Carro"
+    },
+    {
+        "id": 5,
+        "nombre": "Andres",
+        "apellido": "Lopez",
+        "documento": "3333",
+        "especialidad": "Moto"
+    },
+    {
+        "id": 6,
+        "nombre": "Sofia",
+        "apellido": "Martinez",
+        "documento": "4444",
+        "especialidad": "Carro"
+    },
+    {
+        "id": 7,
+        "nombre": "Diego",
+        "apellido": "Hernandez",
+        "documento": "5555",
+        "especialidad": "Moto"
+    },
+    {
+        "id": 8,
+        "nombre": "Valentina",
+        "apellido": "Castro",
+        "documento": "6666",
+        "especialidad": "Carro"
+    },
+    {
+        "id": 9,
+        "nombre": "Luis",
+        "apellido": "Vargas",
+        "documento": "7777",
+        "especialidad": "Moto"
+    },
+    {
+        "id": 10,
+        "nombre": "Camila",
+        "apellido": "Rojas",
+        "documento": "8888",
+        "especialidad": "Carro"
+    },
+    {
+        "id": 11,
+        "nombre": "Fernando",
+        "apellido": "Silva",
+        "documento": "9999",
+        "especialidad": "Moto"
+    },
+    {
+        "id": 12,
+        "nombre": "Daniela",
+        "apellido": "Ortega",
+        "documento": "1010",
+        "especialidad": "Carro"
+    },
+    {
+        "id": 13,
+        "nombre": "Miguel",
+        "apellido": "Navarro",
+        "documento": "2021",
+        "especialidad": "Moto"
+    },
+    {
+        "id": 14,
+        "nombre": "Paula",
+        "apellido": "Delgado",
+        "documento": "3031",
+        "especialidad": "Carro"
+    },
+    {
+        "id": 15,
+        "nombre": "Ricardo",
+        "apellido": "Morales",
+        "documento": "4041",
+        "especialidad": "Moto"
+    },
+    {
+        "id": 16,
+        "nombre": "Elena",
+        "apellido": "Guerrero",
+        "documento": "5051",
+        "especialidad": "Carro"
+    },
+    {
+        "id": 17,
+        "nombre": "Oscar",
+        "apellido": "Mendoza",
+        "documento": "6061",
+        "especialidad": "Moto"
+    },
+    {
+        "id": 18,
+        "nombre": "Lucia",
+        "apellido": "Paredes",
+        "documento": "7071",
+        "especialidad": "Carro"
+    },
+    {
+        "id": 19,
+        "nombre": "Jorge",
+        "apellido": "Salazar",
+        "documento": "8081",
+        "especialidad": "Moto"
+    },
+    {
+        "id": 20,
+        "nombre": "Ana",
+        "apellido": "Cruz",
+        "documento": "9091",
+        "especialidad": "Carro"
     }
 ]

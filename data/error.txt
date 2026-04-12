@@ -28,3 +28,8 @@ Usuario intenta eliminar cliente no existente
 
 ERROR: Opción inválida = 7
 
+ERROR: Opción inválida = 6
+
+Usuario intentó buscar cliente inexistente
+ERROR: Opción inválida = 6
+

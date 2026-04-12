@@ -22,7 +22,7 @@ def registrar_instructor():
     for i in datos:
         if i["documento"] == documento:
             print("❌ Ya existe un instructor con ese documento")
-            pedir_texto("ENTER para continuar...")
+            pedir_texto("ENTER para continuar", permitir_vacio=True)
             return
 
     ids = [i["id"] for i in datos if "id" in i]
@@ -42,7 +42,7 @@ def registrar_instructor():
         json.dump(datos, archivo, indent=4)
     
     print("✅ Instructor registrado correctamente")
-    pedir_texto("ENTER para continuar...")
+    pedir_texto("ENTER para continuar", permitir_vacio=True)
 
 def listar_instructores():
     os.system("clear")
@@ -69,7 +69,7 @@ def listar_instructores():
     except Exception as e:
         print("Error inesperado:", e)
 
-    pedir_texto("Pulse ENTER para continuar...")
+    pedir_texto("ENTER para continuar", permitir_vacio=True)
 
 def eliminar_instructor():
     nombre = input("Ingrese el nombre del instructor a eliminar: ").capitalize()

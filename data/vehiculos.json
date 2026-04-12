@@ -5,46 +5,158 @@
         "marca": "Mrt",
         "modelo": "250 vintage",
         "anio": "2018",
-        "disponible": false
+        "disponible": true
     },
     {
-        "placa": "M675FQX",
-        "tipo": "Moto",
-        "marca": "Tvs",
-        "modelo": "Apache",
-        "anio": "2013",
-        "disponible": false
+        "placa": "P123ABC",
+        "tipo": "Carro",
+        "marca": "Honda",
+        "modelo": "Fit",
+        "anio": "2025",
+        "disponible": true
     },
     {
-        "placa": "M999FTW",
+        "placa": "P321ABC",
+        "tipo": "Carro",
+        "marca": "Lexus",
+        "modelo": "Lx500",
+        "anio": "2026",
+        "disponible": true
+    },
+    {
+        "placa": "M111AAA",
         "tipo": "Moto",
-        "marca": "Mrt",
-        "modelo": "250 vintage",
+        "marca": "Yamaha",
+        "modelo": "FZ",
+        "anio": "2020",
+        "disponible": true
+    },
+    {
+        "placa": "P222BBB",
+        "tipo": "Carro",
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "anio": "2019",
+        "disponible": true
+    },
+    {
+        "placa": "M333CCC",
+        "tipo": "Moto",
+        "marca": "Honda",
+        "modelo": "CBR",
+        "anio": "2021",
+        "disponible": true
+    },
+    {
+        "placa": "P444DDD",
+        "tipo": "Carro",
+        "marca": "Mazda",
+        "modelo": "3",
         "anio": "2018",
         "disponible": true
     },
     {
-        "placa": "P984JGS",
-        "tipo": "Carro",
-        "marca": "Honda",
-        "modelo": "Civic",
-        "anio": "2004",
-        "disponible": false
-    },
-    {
-        "placa": "",
+        "placa": "M555EEE",
         "tipo": "Moto",
-        "marca": "",
-        "modelo": "",
-        "anio": "",
+        "marca": "Suzuki",
+        "modelo": "GSX",
+        "anio": "2022",
         "disponible": true
     },
     {
-        "placa": "M325LWS",
+        "placa": "P666FFF",
+        "tipo": "Carro",
+        "marca": "Ford",
+        "modelo": "Focus",
+        "anio": "2017",
+        "disponible": true
+    },
+    {
+        "placa": "M777GGG",
         "tipo": "Moto",
         "marca": "Kawasaki",
-        "modelo": "Ninja 400",
-        "anio": "2026",
+        "modelo": "Ninja",
+        "anio": "2023",
+        "disponible": true
+    },
+    {
+        "placa": "P888HHH",
+        "tipo": "Carro",
+        "marca": "Chevrolet",
+        "modelo": "Spark",
+        "anio": "2016",
+        "disponible": true
+    },
+    {
+        "placa": "M999III",
+        "tipo": "Moto",
+        "marca": "Bajaj",
+        "modelo": "Pulsar",
+        "anio": "2019",
+        "disponible": true
+    },
+    {
+        "placa": "P101JJJ",
+        "tipo": "Carro",
+        "marca": "Nissan",
+        "modelo": "Versa",
+        "anio": "2020",
+        "disponible": true
+    },
+    {
+        "placa": "M202KKK",
+        "tipo": "Moto",
+        "marca": "TVS",
+        "modelo": "Apache",
+        "anio": "2021",
+        "disponible": true
+    },
+    {
+        "placa": "P303LLL",
+        "tipo": "Carro",
+        "marca": "Hyundai",
+        "modelo": "Accent",
+        "anio": "2018",
+        "disponible": true
+    },
+    {
+        "placa": "M404MMM",
+        "tipo": "Moto",
+        "marca": "Akt",
+        "modelo": "NKD",
+        "anio": "2017",
+        "disponible": true
+    },
+    {
+        "placa": "P505NNN",
+        "tipo": "Carro",
+        "marca": "Kia",
+        "modelo": "Rio",
+        "anio": "2022",
+        "disponible": true
+    },
+    {
+        "placa": "M606OOO",
+        "tipo": "Moto",
+        "marca": "Hero",
+        "modelo": "Hunk",
+        "anio": "2016",
+        "disponible": true
+    },
+    {
+        "placa": "P707PPP",
+        "tipo": "Carro",
+        "marca": "Volkswagen",
+        "modelo": "Gol",
+        "anio": "2019",
+        "disponible": true
+    },
+    {
+        "placa": "M808QQQ",
+        "tipo": "Moto",
+        "marca": "Ducati",
+        "modelo": "Monster",
+        "anio": "2024",
         "disponible": true
     }
 ]

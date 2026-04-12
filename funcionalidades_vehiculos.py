@@ -37,7 +37,7 @@ def registrar_vehiculo():
     for v in datos:
         if v["placa"] == placa:
             print("❌ Ya existe un vehículo con esa placa")
-            pedir_texto("ENTER para continuar...")
+            pedir_texto("ENTER para continuar", permitir_vacio=True)
             return
 
     datos.append(vehiculo)
@@ -46,7 +46,7 @@ def registrar_vehiculo():
         json.dump(datos, archivo, indent=4)
 
     print("✅ Vehículo registrado correctamente")
-    pedir_texto("ENTER para continuar...")
+    pedir_texto("ENTER para continuar", permitir_vacio=True)
 
 def listar_vehiculos():
     os.system("clear")
@@ -78,7 +78,7 @@ def listar_vehiculos():
     except Exception as e:
         print("Error inesperado:", e)
 
-    pedir_texto("Pulse ENTER para continuar...")
+    pedir_texto("ENTER para continuar", permitir_vacio=True)
 
 def cambiar_estado_vehiculo():
     os.system("clear")
@@ -111,4 +111,4 @@ def cambiar_estado_vehiculo():
     with open("data/vehiculos.json", "w") as archivo:
         json.dump(vehiculos, archivo, indent=4)
 
-    pedir_texto("ENTER para continuar...")
+    pedir_texto("ENTER para continuar", permitir_vacio=True)
