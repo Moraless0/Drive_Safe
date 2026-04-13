@@ -1,5 +1,5 @@
 import json, os
-from utilidades import pedir_texto
+from utilidades import pedir_texto, limpiar_pantalla
 
 def programar_cita():
 
@@ -121,7 +121,7 @@ def programar_cita():
 
 def listar_citas():
 
-    os.system("clear")
+    limpiar_pantalla()
 
     try:
         with open("data/citas.json", "r") as f:

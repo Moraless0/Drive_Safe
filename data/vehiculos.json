@@ -5,7 +5,7 @@
         "marca": "Mrt",
         "modelo": "250 vintage",
         "anio": "2018",
-        "disponible": true
+        "disponible": false
     },
     {
         "placa": "P123ABC",
@@ -13,7 +13,7 @@
         "marca": "Honda",
         "modelo": "Fit",
         "anio": "2025",
-        "disponible": true
+        "disponible": false
     },
     {
         "placa": "P321ABC",
@@ -21,7 +21,7 @@
         "marca": "Lexus",
         "modelo": "Lx500",
         "anio": "2026",
-        "disponible": true
+        "disponible": false
     },
     {
         "placa": "M111AAA",
@@ -29,7 +29,7 @@
         "marca": "Yamaha",
         "modelo": "FZ",
         "anio": "2020",
-        "disponible": true
+        "disponible": false
     },
     {
         "placa": "P222BBB",
@@ -37,7 +37,7 @@
         "marca": "Toyota",
         "modelo": "Corolla",
         "anio": "2019",
-        "disponible": true
+        "disponible": false
     },
     {
         "placa": "M333CCC",
@@ -45,7 +45,7 @@
         "marca": "Honda",
         "modelo": "CBR",
         "anio": "2021",
-        "disponible": true
+        "disponible": false
     },
     {
         "placa": "P444DDD",
@@ -53,7 +53,7 @@
         "marca": "Mazda",
         "modelo": "3",
         "anio": "2018",
-        "disponible": true
+        "disponible": false
     },
     {
         "placa": "M555EEE",
@@ -61,7 +61,7 @@
         "marca": "Suzuki",
         "modelo": "GSX",
         "anio": "2022",
-        "disponible": true
+        "disponible": false
     },
     {
         "placa": "P666FFF",
@@ -69,7 +69,7 @@
         "marca": "Ford",
         "modelo": "Focus",
         "anio": "2017",
-        "disponible": true
+        "disponible": false
     },
     {
         "placa": "M777GGG",
@@ -77,7 +77,7 @@
         "marca": "Kawasaki",
         "modelo": "Ninja",
         "anio": "2023",
-        "disponible": true
+        "disponible": false
     },
     {
         "placa": "P888HHH",

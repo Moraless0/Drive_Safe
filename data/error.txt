@@ -33,3 +33,7 @@ ERROR: Opción inválida = 6
 Usuario intentó buscar cliente inexistente
 ERROR: Opción inválida = 6
 
+ERROR: Opci�n inv�lida = 5
+
+ERROR: Opci�n inv�lida = 102
+

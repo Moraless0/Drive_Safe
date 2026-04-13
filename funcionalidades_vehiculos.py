@@ -1,4 +1,4 @@
-from utilidades import pedir_texto
+from utilidades import pedir_texto, limpiar_pantalla
 import json, os
 
 import json
@@ -49,7 +49,7 @@ def registrar_vehiculo():
     pedir_texto("ENTER para continuar", permitir_vacio=True)
 
 def listar_vehiculos():
-    os.system("clear")
+    limpiar_pantalla()
     try:
         with open("data/vehiculos.json", "r") as archivo:
             vehiculos = json.load(archivo)
@@ -81,7 +81,7 @@ def listar_vehiculos():
     pedir_texto("ENTER para continuar", permitir_vacio=True)
 
 def cambiar_estado_vehiculo():
-    os.system("clear")
+    limpiar_pantalla()
 
     placa = input("Ingrese la placa del vehículo: ").strip().upper()
 

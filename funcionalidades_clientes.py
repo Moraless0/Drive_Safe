@@ -1,4 +1,4 @@
-from utilidades import pedir_texto
+from utilidades import pedir_texto, limpiar_pantalla
 import json, os
 
 def registrar_cliente():
@@ -33,7 +33,7 @@ def registrar_cliente():
     pedir_texto("ENTER para continuar", permitir_vacio=True)
 
 def listar_clientes():
-    os.system("clear")
+    limpiar_pantalla()
     try:
         with open("data/clientes.json", "r") as archivo:
             clientes = json.load(archivo)

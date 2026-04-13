@@ -1,3 +1,5 @@
+import os
+
 def pedir_texto(mensaje, permitir_vacio=False):
     try:
         opc = input(mensaje).strip()
@@ -11,3 +13,6 @@ def pedir_texto(mensaje, permitir_vacio=False):
     except Exception:
         print("Error al pedir texto!")
         return None
+
+def limpiar_pantalla():
+    os.system('cls' if os.name == 'nt' else 'clear')

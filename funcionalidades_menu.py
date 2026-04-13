@@ -4,36 +4,36 @@ from funcionalidades_instructores import registrar_instructor, listar_instructor
 from funcionalidades_vehiculos import registrar_vehiculo, listar_vehiculos, cambiar_estado_vehiculo
 from funcionalidades_citas import programar_cita, listar_citas, listar_citas_cliente, listar_citas_fecha, registrar_asistencia
 from funcionalidades_reporte import menu_historial
-from utilidades import pedir_texto
+from utilidades import pedir_texto, limpiar_pantalla
 import os
 
 def seleccionar_opción():
     while True:
         try:
-            os.system("clear")
+            limpiar_pantalla()
             mostrar_logo()
             n = pedir_opcion()
             if n == 1:
-                os.system("clear")
+                limpiar_pantalla()
                 menu_gestionar_clientes()
             elif n == 2:
-                os.system("clear")
+                limpiar_pantalla()
                 menu_gestionar_instructores()
             elif n == 3:
-                os.system("clear")
+                limpiar_pantalla()
                 menu_gestionar_vehiculos()
             elif n == 4:
-                os.system("clear")
+                limpiar_pantalla()
                 menu_gestionar_citas()
             elif n == 5:
-                os.system("clear")
+                limpiar_pantalla()
                 menu_gestionar_reporte()
             elif n == 6:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Saliendo del programa...")
                 break
             else:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Opcion no valida!")
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
@@ -43,33 +43,33 @@ def seleccionar_opción():
 
                     
         except Exception:
-            os.system("clear")
+            limpiar_pantalla()
             print("ERROR - INCORRECTO")
             pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
 
 def menu_gestionar_clientes():
     while True:
         try:
-            os.system("clear")
+            limpiar_pantalla()
             n = pedir_opcion_clientes()
             if n == 1:
-                os.system("clear")
+                limpiar_pantalla()
                 registrar_cliente()
             elif n == 2:
-                os.system("clear")
+                limpiar_pantalla()
                 listar_clientes()
             elif n == 3:
-                os.system("clear")
+                limpiar_pantalla()
                 buscar_cliente()
             elif n == 4:
-                os.system("clear")
+                limpiar_pantalla()
                 eliminar_cliente()
             elif n == 5:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Saliendo del programa...")
                 break
             else:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Opcion no valida!")
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
@@ -78,30 +78,30 @@ def menu_gestionar_clientes():
                     archivo.write(f"ERROR: Opción inválida = {n}\n\n")
         
         except Exception:
-            os.system("clear")
+            limpiar_pantalla()
             print("ERROR - INCORRECTO")
             pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
 
 def menu_gestionar_instructores():
     while True:
         try:
-            os.system("clear")
+            limpiar_pantalla()
             n = pedir_opcion_instructores()
             if n == 1:
-                os.system("clear")
+                limpiar_pantalla()
                 registrar_instructor()
             elif n == 2:
-                os.system("clear")
+                limpiar_pantalla()
                 listar_instructores()
             elif n == 3:
-                os.system("clear")
+                limpiar_pantalla()
                 eliminar_instructor()
             elif n == 4:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Saliendo del programa...")
                 break
             else:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Opcion no valida!")
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
@@ -110,29 +110,29 @@ def menu_gestionar_instructores():
                     archivo.write(f"ERROR: Opción inválida = {n}\n\n")
         
         except Exception:
-            os.system("clear")
+            limpiar_pantalla()
             print("ERROR - INCORRECTO")
 
 def menu_gestionar_vehiculos():
     while True:
         try:
-            os.system("clear")
+            limpiar_pantalla()
             n = pedir_opcion_vehiculos()
             if n == 1:
-                os.system("clear")
+                limpiar_pantalla()
                 registrar_vehiculo()
             elif n == 2:
-                os.system("clear")
+                limpiar_pantalla()
                 listar_vehiculos()
             elif n == 3:
-                os.system("clear")
+                limpiar_pantalla()
                 cambiar_estado_vehiculo()
             elif n == 4:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Saliendo del programa...")
                 break
             else:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Opcion no valida!")
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
@@ -141,34 +141,34 @@ def menu_gestionar_vehiculos():
                  archivo.write(f"ERROR: Opción inválida = {n}\n\n")
         
         except Exception:
-            os.system("clear")
+            limpiar_pantalla()
             print("ERROR - INCORRECTO")
 
 def menu_gestionar_citas():
     while True:
         try:
-            os.system("clear")
+            limpiar_pantalla()
             n = pedir_opcion_citas()
             if n == 1:
-                os.system("clear")
+                limpiar_pantalla()
                 programar_cita()
             elif n == 2:
-                os.system("clear")
+                limpiar_pantalla()
                 listar_citas()
             elif n == 3:
-                os.system("clear")
+                limpiar_pantalla()
                 listar_citas_cliente()
             elif n == 4:
-                os.system("clear")
+                limpiar_pantalla()
                 listar_citas_fecha()
             elif n == 5:
                 registrar_asistencia()
             elif n == 6:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Saliendo del programa...")
                 break
             else:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Opcion no valida!")
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
@@ -178,24 +178,24 @@ def menu_gestionar_citas():
 
                     
         except Exception:
-            os.system("clear")
+            limpiar_pantalla()
             print("ERROR - INCORRECTO")
             pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
 
 def menu_gestionar_reporte():
     while True:
         try:
-            os.system("clear")
+            limpiar_pantalla()
             n = pedir_opcion_reporte()
             if n == 1:
-                os.system("clear")
+                limpiar_pantalla()
                 menu_historial()
             elif n == 2:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Saliendo del programa...")
                 break
             else:
-                os.system("clear")
+                limpiar_pantalla()
                 print("Opcion no valida!")
                 print("Ingrese un valor correcto!")
                 pedir_texto("Pulse ENTER para intentar nuevamente.", permitir_vacio=True)
@@ -204,5 +204,5 @@ def menu_gestionar_reporte():
                  archivo.write(f"ERROR: Opción inválida = {n}\n\n")
         
         except Exception:
-            os.system("clear")
+            ("clearos.system")
             print("ERROR - INCORRECTO")

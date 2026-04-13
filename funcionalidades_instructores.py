@@ -1,4 +1,4 @@
-from utilidades import pedir_texto
+from utilidades import pedir_texto, limpiar_pantalla
 import json, os
 
 def registrar_instructor():
@@ -45,7 +45,7 @@ def registrar_instructor():
     pedir_texto("ENTER para continuar", permitir_vacio=True)
 
 def listar_instructores():
-    os.system("clear")
+    limpiar_pantalla()
     try:
         with open("data/instructores.json", "r") as archivo:
             instructores = json.load(archivo)

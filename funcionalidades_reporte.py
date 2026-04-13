@@ -1,9 +1,9 @@
-from utilidades import pedir_texto
+from utilidades import pedir_texto, limpiar_pantalla
 import json, os
 
 def menu_historial():
 
-    os.system("clear")
+    limpiar_pantalla()
 
     try:
         with open("data/citas.json", "r") as f:
