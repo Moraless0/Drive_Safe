@@ -95,14 +95,19 @@ def pedir_opcion_citas():
 
 def pedir_opcion_reporte():
     print("""
-                ╔══════════════════════════════════════╗
-                ║           GESTIONAR CITAS            ║
-                ╠══════════════════════════════════════╣
-                ║  [1] Historial                       ║
-                ║  [2] Menu principal                  ║
-                ╠══════════════════════════════════════╣""")
+                ╔══════════════════════════════════════════╗
+                ║           GESTIONAR CITAS                ║
+                ╠══════════════════════════════════════════╣
+                ║  [1] Historial de prácticas por cliente  ║
+                ║  [2] Citas por fecha                     ║
+                ║  [3] Resumen general de citas            ║
+                ║  [4] Citas por instructor                ║
+                ║  [5] Uso de vehículos                    ║
+                ║  [6] Reporte de inasistencia             ║
+                ║  [7] Menu principal                      ║
+                ╠══════════════════════════════════════════╣""")
 
     opc = int(input("                ║  Opción: "))
 
-    print("                ╚══════════════════════════════════════╝")
+    print("                ╚═════════════════════════════════════════╝")
     return opc
