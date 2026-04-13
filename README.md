@@ -23,13 +23,24 @@ DriveSafe es una aplicación en Python que permite gestionar clientes, instructo
 DriveSafe/
 │
 ├── data/
-│   ├── clientes.json
-│   ├── instructores.json
-│   ├── vehiculos.json
-│   └── citas.json
+│  ├── clientes.json
+│  ├── instructores.json
+│  ├── vehiculos.json
+│  └── citas.json
+│
+├── funcionalidades_clientes.py
+├── funcionalidades_instructores.py
+├── funcionalidades_vehiculos.py
+├── funcionalidades_citas.py
+├── funcionalidades_reporte.py
+├── funcionalidades_menu.py
 │
 ├── utilidades.py
+├── utilidades_menu.py
+├── utilidades_sistema.py
+│
 ├── main.py
+├── error.txt
 └── README.md
 ```
 
