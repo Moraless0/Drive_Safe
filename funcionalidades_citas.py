@@ -1,4 +1,5 @@
-import json, os
+import json
+from datetime import datetime
 from utilidades import pedir_texto, limpiar_pantalla
 
 def programar_cita():
@@ -79,18 +80,34 @@ def programar_cita():
     hora = input("Ingrese hora (HH:MM): ")
     duracion = input("Ingrese duración (minutos): ")
 
+# Validar fecha y hora
+    try:
+        fecha_cita = datetime.strptime(f"{fecha} {hora}", "%Y-%m-%d %H:%M")
+    except ValueError:
+        print("❌ Fecha u hora inválida")
+        pedir_texto("ENTER para continuar...")
+        return
+
+# Validar que no sea pasado
+    if fecha_cita < datetime.now():
+        print("❌ No puedes crear una cita en el pasado")
+        pedir_texto("ENTER para continuar", permitir_vacio=True)
+        return
+
+# Validar conflictos
     for cita in citas:
         if cita["fecha"] == fecha and cita["hora"] == hora:
-
+            
             if cita["instructor"] == doc_instructor:
+                
                 print("❌ Instructor ocupado en ese horario")
                 pedir_texto("ENTER para continuar", permitir_vacio=True)
                 return
 
-            if cita["vehiculo"] == vehiculo["placa"]:
-                print("❌ Vehículo ocupado en ese horario")
-                pedir_texto("ENTER para continuar", permitir_vacio=True)
-                return
+        if cita["vehiculo"] == vehiculo["placa"]:
+            print("❌ Vehículo ocupado en ese horario")
+            pedir_texto("ENTER para continuar", permitir_vacio=True)
+            return
 
     nueva_cita = {
         "id": len(citas) + 1,
