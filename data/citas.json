@@ -108,5 +108,16 @@
         "duracion": "60",
         "asistencia": false,
         "observaciones": ""
+    },
+    {
+        "id": 11,
+        "cliente": "6767",
+        "instructor": "6969",
+        "vehiculo": "M999III",
+        "fecha": "2026-04-14",
+        "hora": "13:00",
+        "duracion": "60",
+        "asistencia": true,
+        "observaciones": "Se mato en la moto"
     }
 ]

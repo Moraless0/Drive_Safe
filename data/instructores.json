@@ -138,5 +138,12 @@
         "apellido": "Cruz",
         "documento": "9091",
         "especialidad": "Carro"
+    },
+    {
+        "id": 21,
+        "nombre": "Fredy",
+        "apellido": "Molina",
+        "documento": "6969",
+        "especialidad": "Moto"
     }
 ]

@@ -37,3 +37,7 @@ ERROR: Opción inválida = 5
 
 ERROR: Opción inválida = 102
 
+ERROR: Opción inválida = 7
+
+ERROR: Opción inválida = 7
+

@@ -118,5 +118,11 @@
         "nombre": "Oscar",
         "apellido": "Guerrero",
         "vehiculo": "Moto"
+    },
+    {
+        "documento": "6767",
+        "nombre": "Diego",
+        "apellido": "Cantoral",
+        "vehiculo": "Moto"
     }
 ]

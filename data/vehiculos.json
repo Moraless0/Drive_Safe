@@ -93,7 +93,7 @@
         "marca": "Bajaj",
         "modelo": "Pulsar",
         "anio": "2019",
-        "disponible": true
+        "disponible": false
     },
     {
         "placa": "P101JJJ",
@@ -157,6 +157,14 @@
         "marca": "Ducati",
         "modelo": "Monster",
         "anio": "2024",
+        "disponible": true
+    },
+    {
+        "placa": "M676FMH",
+        "tipo": "Moto",
+        "marca": "Kawasaki",
+        "modelo": "H2r",
+        "anio": "2030",
         "disponible": true
     }
 ]

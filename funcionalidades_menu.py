@@ -3,7 +3,7 @@ from funcionalidades_clientes import registrar_cliente, listar_clientes, buscar_
 from funcionalidades_instructores import registrar_instructor, listar_instructores, eliminar_instructor
 from funcionalidades_vehiculos import registrar_vehiculo, listar_vehiculos, cambiar_estado_vehiculo
 from funcionalidades_citas import programar_cita, listar_citas, listar_citas_cliente, listar_citas_fecha, registrar_asistencia
-from funcionalidades_reporte import menu_historial
+from funcionalidades_reporte import reporte_cliente, reporte_fecha, resumen_general, citas_por_instructor, uso_vehiculos, inasistencias
 from utilidades import pedir_texto, limpiar_pantalla
 import os
 
@@ -189,8 +189,23 @@ def menu_gestionar_reporte():
             n = pedir_opcion_reporte()
             if n == 1:
                 limpiar_pantalla()
-                menu_historial()
+                reporte_cliente()
             elif n == 2:
+                limpiar_pantalla()
+                reporte_fecha()
+            elif n == 3:
+                limpiar_pantalla()
+                resumen_general()
+            elif n == 4:
+                limpiar_pantalla()
+                citas_por_instructor()
+            elif n == 5:
+                limpiar_pantalla()
+                uso_vehiculos()
+            elif n == 6:
+                limpiar_pantalla()
+                inasistencias()
+            elif n == 7:
                 limpiar_pantalla()
                 print("Saliendo del programa...")
                 break
@@ -204,5 +219,4 @@ def menu_gestionar_reporte():
                  archivo.write(f"ERROR: Opción inválida = {n}\n\n")
         
         except Exception:
-            ("clearos.system")
             print("ERROR - INCORRECTO")
