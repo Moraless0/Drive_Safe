@@ -1,5 +1,5 @@
 from utilidades import pedir_texto, limpiar_pantalla
-import json, os
+import json
 
 import json
 

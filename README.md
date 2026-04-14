@@ -12,6 +12,7 @@ DriveSafe es una aplicación en Python que permite gestionar clientes, instructo
 * 📅 Programación de citas
 * ✅ Registro de asistencia
 * 📊 Reportes e historial
+* 📋 Gestión de calificaciones
 * 🔍 Búsqueda por cliente y fecha
 * ⚠️ Validación de conflictos (instructor/vehículo ocupado)
 
@@ -26,6 +27,7 @@ DriveSafe/
 │  ├── clientes.json
 │  ├── instructores.json
 │  ├── vehiculos.json
+│  ├── evaluaciones.json
 │  └── citas.json
 │
 ├── funcionalidades_clientes.py
@@ -34,6 +36,8 @@ DriveSafe/
 ├── funcionalidades_citas.py
 ├── funcionalidades_reporte.py
 ├── funcionalidades_menu.py
+├── funcionalidades_evaluaciones.py
+│
 │
 ├── utilidades.py
 ├── utilidades_menu.py
@@ -97,6 +101,12 @@ python main.py
 * Filtrar por cliente
 * Filtrar por fecha
 * Ver citas con/sin asistencia
+
+### 📋 Calificaciones
+
+* Registrar nueva evaluación
+* Consultar evaluaciones por estudiante
+* Calcular promedio general
 
 ---
 

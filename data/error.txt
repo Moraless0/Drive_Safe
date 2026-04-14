@@ -41,3 +41,19 @@ ERROR: Opci髇 inv醠ida = 7
 
 ERROR: Opci髇 inv醠ida = 7
 
+ERROR: Opci贸n inv谩lida = 7
+
+ERROR: Opci贸n inv谩lida = 7
+
+ERROR: Opci贸n inv谩lida = 7
+
+ERROR: Opci贸n inv谩lida = 6
+
+ERROR: Opci贸n inv谩lida = 11
+
+ERROR: Opci贸n inv谩lida = 6
+
+ERROR: Opci贸n inv谩lida = 5
+
+ERROR: Opci贸n inv谩lida = 32
+

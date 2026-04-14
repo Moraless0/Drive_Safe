@@ -18,7 +18,8 @@ def pedir_opcion():
                 ║  [3] Gestionar Vehiculos             ║
                 ║  [4] Gestionar Citas                 ║
                 ║  [5] Reportes / Historial            ║
-                ║  [6] Salir                           ║
+                ║  [6] Gestionar evaluaciones          ║
+                ║  [7] Salir                           ║
                 ╠══════════════════════════════════════╣""")
 
     opc = int(input("                ║  Opción: "))
@@ -106,6 +107,22 @@ def pedir_opcion_reporte():
                 ║  [6] Reporte de inasistencia             ║
                 ║  [7] Menu principal                      ║
                 ╠══════════════════════════════════════════╣""")
+
+    opc = int(input("                ║  Opción: "))
+
+    print("                ╚═════════════════════════════════════════╝")
+    return opc
+
+def pedir_opcion_evaluacion():
+    print("""
+                ╔═════════════════════════════════════════════╗
+                ║          GESTIONAR EVALUACIONES             ║
+                ╠═════════════════════════════════════════════╣
+                ║  [1] Registrar nueva evaluación             ║
+                ║  [2] Consultar evaluaciones por estudiante  ║
+                ║  [3] Calcular promedio general              ║
+                ║  [4] Menu principal                         ║
+                ╠═════════════════════════════════════════════╣""")
 
     opc = int(input("                ║  Opción: "))
 

@@ -1,0 +1,26 @@
+[
+    {
+        "cliente": "1020",
+        "instructor": "6070",
+        "fecha": "2026-04-14",
+        "calificacion": 90
+    },
+    {
+        "cliente": "5060",
+        "instructor": "2222",
+        "fecha": "2026-04-14",
+        "calificacion": 60
+    },
+    {
+        "cliente": "7080",
+        "instructor": "1111",
+        "fecha": "2026-04-14",
+        "calificacion": 99
+    },
+    {
+        "cliente": "1020",
+        "instructor": "6070",
+        "fecha": "2026-03-20",
+        "calificacion": 70
+    }
+]
